@@ -36,11 +36,11 @@ export function isPink (color) { return color === 'pink' }
 // Export a class inline.
 export class LittleBox { /* ... */ }
 
+// Export at the bottom.
 const blue = 'blue'
 function yellow () { return 'yellow' }
 class Hillside {}
 
-// Export at the bottom.
 export { blue, yellow, Hillside }
 ```
 
@@ -71,7 +71,7 @@ export default class Person { /* ... */ }
 
 // Export class separately
 class Person { /* ... */ }
-export Person
+export default Person
 ```
 
 ## Imports
